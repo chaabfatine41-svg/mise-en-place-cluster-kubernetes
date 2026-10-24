@@ -18,6 +18,7 @@ kubectl apply -f service.yaml
 
 ## Vérifier les Services
 kubectl get services
+kubectl describe service nginx-service
 
 ## Consulter les détails d'un Pod
 kubectl describe pod NOM_DU_POD
