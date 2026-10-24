@@ -22,3 +22,13 @@ Déploiement d’un cluster Kubernetes composé d’un nœud Master et de trois 
 - `deployment.yaml` : configuration du déploiement Nginx.
 - `service.yaml` : configuration du Service pour accéder à Nginx.
 - `commandes.md` : commandes Kubernetes utilisées dans le projet.
+- ## Architecture du cluster
+
+- **1 nœud Master** : gestion du cluster Kubernetes.
+- **3 nœuds Workers** : exécution des applications conteneurisées.
+- **Application** : Nginx, déployée avec 3 réplicas.
+- **Accès** : Service de type NodePort sur le port `30080`.
+
+## État du projet
+
+Ce dépôt contient les fichiers de configuration et la documentation du projet. Le déploiement réel du cluster reste à réaliser et à tester.
